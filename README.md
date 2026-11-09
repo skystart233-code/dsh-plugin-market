@@ -51,8 +51,7 @@
 从 [v1.0.0 Release](https://github.com/skystart233-code/dsh-plugin-market/releases/tag/v1.0.0) 安装固定版本，内容已经打包好，不需要构建：
 
 ```bash
-dsh plugin --profile <profile> add \
-  https://github.com/skystart233-code/dsh-plugin-market/releases/download/v1.0.0/local-dsh-plugin-market-1.0.0.tgz
+dsh plugin --profile <profile> add https://github.com/skystart233-code/dsh-plugin-market/releases/download/v1.0.0/local-dsh-plugin-market-1.0.0.tgz
 ```
 
 ### 方式二：GitHub 源码
@@ -257,8 +256,7 @@ dsh-plugin-market/
 A sidebar plugin market for DeepSeek Harness. It turns the dsh.goodcase.ai catalog (7,557 plugins, 23 categories) into a native panel with search, install, update, enable/disable, and uninstall. Installs run on the Host and survive leaving the page; progress resumes when you come back. Every plugin has a support-chat button that sends the plugin brief as invisible system context, so the transcript only shows your question and the answer.
 
 ```bash
-dsh plugin --profile <profile> add \
-  https://github.com/skystart233-code/dsh-plugin-market/releases/download/v1.0.0/local-dsh-plugin-market-1.0.0.tgz
+dsh plugin --profile <profile> add https://github.com/skystart233-code/dsh-plugin-market/releases/download/v1.0.0/local-dsh-plugin-market-1.0.0.tgz
 ```
 
 Restart DSH, then open **插件市场** in the sidebar. Third-party plugins run with your own permissions; a catalog listing is not a security review. MIT licensed.
