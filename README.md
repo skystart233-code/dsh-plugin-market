@@ -10,13 +10,24 @@ plugin manager.
 
 The public repository is
 [skystart233-code/dsh-plugin-market](https://github.com/skystart233-code/dsh-plugin-market).
+A prebuilt package is attached to the
+[v1.0.0 release](https://github.com/skystart233-code/dsh-plugin-market/releases/tag/v1.0.0).
+
+Install from source, or from the versioned tarball:
+
+```bash
+dsh plugin --profile <profile> add github:skystart233-code/dsh-plugin-market
+# or
+dsh plugin --profile <profile> add https://github.com/skystart233-code/dsh-plugin-market/releases/download/v1.0.0/local-dsh-plugin-market-1.0.0.tgz
+```
+
+Then restart DSH.
 
 It is a normal DSH bundle: `package.json` declares `dsh.bundle.patch`, both
-halves are plain JavaScript, and there is no build step. Add the repository as
-a bundle spec in a profile with the Harness plugin manager, then restart DSH.
-The package name `@local/dsh-plugin-market` is kept because the author's desktop
-profile links this checkout directly; a fork can rename it to its own scope
-before publishing to npm.
+halves are plain JavaScript, and there is no build step. The package name
+`@local/dsh-plugin-market` is kept because the author's desktop profile links
+this checkout directly; a fork can rename it to its own scope before publishing
+to npm.
 
 To develop against a local checkout, link the directory in the profile's
 `package.json` and add the same key to `dsh.profile.bundles`:
